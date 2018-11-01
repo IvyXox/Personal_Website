@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <title class="title">About | Ivy Planner</title>
+    <link rel="icon" href="../pictures/TitleIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/stylesheet.css" />
+</head>
+
+<body>
+<!-- Header + Navbar -->
+    <div class="header">
+            <h1 class="titletxt">Ivy Planner</h1>
+        </div>
+                <div class="nav" id="nav">
+                    <div class="container">
+                      <ul>
+                          <a href="index.html"><li>Main</li></a>
+                          <a href="planer.html"><li>Planer</li></a>
+                          <a href="subjects.html"><li>Fächerübersicht</li></a>
+                          <a href="about.html"><li>About</li></a>
+                          <a href="contact.html"><li>Kontakt</li></a>
+                          <a href="profile.html"><li>Profil</li></a>
+                      </ul>
+                    </div>
+                 </div>
+    
+        <script>
+            // When the user scrolls the page "offscreen", execute thisFunction 
+            window.onscroll = function() {thisFunction()};
+            
+            // Get the navbar
+            var nav = document.getElementById("nav");
+            
+            // Get the offset position of the navbar
+            var sticky = nav.offsetTop;
+            
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function thisFunction() {
+              if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+              } else {
+                nav.classList.remove("sticky");
+              }
+            }</script>
+<h2>Über uns</h2> 
+<div class="container about">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+<p>Vel non cum accusamus corrupti quisquam?</p>
+<ul>
+   <li>Sit dolorem a debitis dolor,</li>  
+   <li>dolores voluptas fuga sunt quae aperiam sed minima,</li>
+   <li>necessitatibus voluptatibus vel.</li>
+</ul>
+</div>
+    <footer class="footer">
+            <p><em>Impressum</em></p>
+            <p>Ivys-Notenplaner@gmx.de</p>
+            <p><a href="https://twitter.com/Ivy_ada_Luvlce" target="_blank">Twitter</a></p>
+        </footer>
+</body>
+</html>
