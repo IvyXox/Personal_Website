@@ -10,8 +10,6 @@
     portfolio website.
 */
 
- // When the user scrolls the page "offscreen", execute thisFunction 
-
 (function($) {
 
     // Remove no-js class
@@ -37,6 +35,7 @@
         }
     });
     /*
+     // When the user scrolls the page "offscreen", execute thisFunction 
     window.onscroll = function() {thisFunction()};
             
     // Get the navbar
